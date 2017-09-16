@@ -1,47 +1,202 @@
 {
-    "d6_curr": 0,
-    "d8_curr": 6,
-    "d10_curr": 1,
-    "d12_curr": 0,
-    "d6_curr": 0,
-    "d8_curr": 6,
-    "d10_curr": 1,
-    "d12_curr": 0,
-    "max_hp": 54,
-    "int": 10,
-    "cha": 8,
-    "d8_max": 6,
-    "pass_perc": 13,
-    "d6_max": 0,
-    "ac": 15,
-    "con": 16,
-    "d10_max": 1,
-    "speed": 7,
-    "d12_max": 0,
-    "dex": 17,
-    "prof_bonus": 3,
-    "wis": 13,
-    "str": 14,
-    "curr_hp": 24,
-    "inventory": [
-        { "Legbone": 1 ],
-        { "Super Shiny Neckless": 1 ],
-        { "Dagger": 1 ],
-        { "Bone Dagger": 1 ],
-        { "Bottle Poison": 1 ],
-        { "Feathers": 5 ],
-        { "Red Robe (Studded)": 1 ],
-        { "Rope (ft)": 50 ],
-        { "Rapier": 1 ],
-        { "Light pants": 1 ],
-        { "Coif": 1 ],
-        { "Backpack": 1 ],
-        { "Golden Scarabe 'YOU NEED THIS'": 1 ],
-        { "Small Bag of Meat": 1 ],
-        { "Ocean Spray": 1 ],
-        { "Brown Shirt": 1 ],
-        { "mokasin": 1 ],
-        { "Shitty Dagger": 1 ]
-    ] 
+  "curr_hp": 24,
+  "hitdice": [
+    {
+      "dice": "d12",
+      "curr": 0,
+      "max": 0
+    },
+    {
+      "dice": "d10",
+      "curr": 1,
+      "max": 1
+    },
+    {
+      "dice": "d6",
+      "curr": 0,
+      "max": 0
+    },
+    {
+      "dice": "d8",
+      "curr": 6,
+      "max": 6
+    }
+  ],
+  "pass_perc": 13,
+  "ac": 15,
+  "con": 16,
+  "wis": 13,
+  "speed": 7,
+  "prof_bonus": 3,
+  "dex": 17,
+  "skills": [
+    {
+      "name": "Acrobaics",
+      "training": "perficient",
+      "stat": "dex"
+    },
+    {
+      "name": "Animal Handling",
+      "training": 0,
+      "stat": "wis"
+    },
+    {
+      "name": "Acana",
+      "training": 0,
+      "stat": "int"
+    },
+    {
+      "name": "Athletics",
+      "training": "perficient",
+      "stat": "str"
+    },
+    {
+      "name": "Deception",
+      "training": 0,
+      "stat": "cha"
+    },
+    {
+      "name": "History",
+      "training": 0,
+      "stat": "int"
+    },
+    {
+      "name": "Insight",
+      "training": "perficient",
+      "stat": "wis"
+    },
+    {
+      "name": "Intimidation",
+      "training": 0,
+      "stat": "cha"
+    },
+    {
+      "name": "Investigation",
+      "training": 0,
+      "stat": "int"
+    },
+    {
+      "name": "Medicine",
+      "training": 0,
+      "stat": "wis"
+    },
+    {
+      "name": "Nature",
+      "training": 0,
+      "stat": "int"
+    },
+    {
+      "name": "Perception",
+      "training": 0,
+      "stat": "wis"
+    },
+    {
+      "name": "Performance",
+      "training": 0,
+      "stat": "cha"
+    },
+    {
+      "name": "Persuasion",
+      "training": 0,
+      "stat": "cha"
+    },
+    {
+      "name": "Religion",
+      "training": 0,
+      "stat": "int"
+    },
+    {
+      "name": "Sleight of Hand",
+      "training": "perficient",
+      "stat": "dex"
+    },
+    {
+      "name": "Stealth",
+      "training": "expertic",
+      "stat": "dex"
+    },
+    {
+      "name": "Survival",
+      "training": "expertic",
+      "stat": "wis"
+    }
+  ],
+  "cha": 8,
+  "int": 10,
+  "max_hp": 54,
+  "str": 14,
+  "inventory": [
+    {
+      "name": "Golden Scarabe (YOU NEED THIS)",
+      "amount": 1
+    },
+    {
+      "name": "Small Bag of Meat",
+      "amount": 1
+    },
+    {
+      "name": "Rope (ft)",
+      "amount": 50
+    },
+    {
+      "name": "Coif",
+      "amount": 1
+    },
+    {
+      "name": "Legbone",
+      "amount": 1
+    },
+    {
+      "name": "mokasin",
+      "amount": 1
+    },
+    {
+      "name": "Red Robe (Studded)",
+      "amount": 1
+    },
+    {
+      "name": "Backpack",
+      "amount": 1
+    },
+    {
+      "name": "Brown Shirt",
+      "amount": 1
+    },
+    {
+      "name": "Light pants",
+      "amount": 1
+    },
+    {
+      "name": "Super Shiny Neckless",
+      "amount": 1
+    },
+    {
+      "name": "Rapier",
+      "amount": 1
+    },
+    {
+      "name": "Bottle Poison",
+      "amount": 1
+    },
+    {
+      "name": "Shitty Dagger",
+      "amount": 1
+    },
+    {
+      "name": "Ocean Spray",
+      "amount": 1
+    },
+    {
+      "name": "Bone Dagger",
+      "amount": 1
+    },
+    {
+      "name": "Feathers",
+      "amount": 5
+    },
+    {
+      "name": "Dagger",
+      "amount": 1
+    }
+  ]
 }
-

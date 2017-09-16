@@ -40,73 +40,56 @@ class D12(Dice):
         return randint(1, 12)
 
 
-class HitDice(object):
-    def __init__(self, prof_bonus, stats):
-        self.d6_max = stats['d6_max']
-        self.d8_max = stats['d8_max']
-        self.d10_max = stats['d10_max']
-        self.d12_max = stats['d12_max']
+class OutOfHitDieError(Exception):
+    pass
 
-        self.d6_curr = stats['d6_curr']
-        self.d8_curr = stats['d8_curr']
-        self.d10_curr = stats['d10_curr']
-        self.d12_max = stats['d12_curr']
 
-        self.d6 = D6()
-        self.d8 = D8()
-        self.d10 = D10()
-        self.d12 = D12()
+def dice_factory(lookup_str):
+    try:
+        return {"d6": D6(),
+                "d8": D8(),
+                "d10": D10(),
+                "d12": D12()}[lookup_str]
+    except KeyError:
+        raise KeyError("Invalid dice type '{}'".format(lookup_str))
 
-    def to_dict(self):
-        vals = ['d6_max', 'd8_max', 'd10_max', 'd12_max',
-                'd6_max', 'd8_max', 'd10_max', 'd12_max']
 
-        ret_vals = {}
-        for v in vals:
-            ret_vals[v] = eval('self.' + v)
+class HitDie(object):
+    def __init__(self, **kwargs):
+        self.dice = dice_factory(kwargs['dice'])
+        self.curr = kwargs['curr']
+        self.max = kwargs['max']
 
-        return ret_vals
-
-    def long_rest(self):
-        self.d6_curr = self.d6_max
-        self.d8_curr = self.d8_max
-        self.d10_curr = self.d10_max
-        self.d12_max = self.d12_max
-
-    def use(self, die_str):
-        die = {'d6': self.d6,
-               'd8': self.d8,
-               'd10': self.d10,
-               'd12': self.d12}.get(die_str)
-
-        if die is None:
-            raise TypeError(
-                "Die string is not valid, given '{}'".format(die_str))
-
-        if '6' in die_str:
-            if self.d6_curr <= 0:
-                print("Out of d6 hit die")
-            else:
-                self.d6_curr -= 1
-                return self.d6().roll()
-
-        elif '8' in die_str:
-            if self.d8_curr <= 0:
-                print("Out of d6 hit die")
-            else:
-                self.d8_curr -= 1
-                return self.d8().roll()
-
-        elif '10' in die_str:
-            if self.d10_curr <= 0:
-                print("Out of d6 hit die")
-            else:
-                self.d10_curr -= 1
-                return self.d10().roll()
+    def use(self):
+        if self.curr > 0:
+            self.curr -= 1
+            return self.dice.roll()
 
         else:
-            if self.d12_curr <= 0:
-                print("Out of d6 hit die")
-            else:
-                self.d12_curr -= 1
-                return self.d12().roll()
+            raise OutOfHitDieError("Out of hit dice")
+
+    def reset(self):
+        self.curr = self.max
+
+    def to_dict(self):
+        return {"dice": self.dice.get_type(),
+                "max": self.max,
+                "curr": self.curr}
+
+
+class HitDice(object):
+    def __init__(self, prof_bonus, stats):
+        hitdice = stats['hitdice']
+        self.dice = {d['dice']: HitDie(**d) for d in hitdice}
+
+    def to_dict(self):
+        return [d.to_dict() for d in self.dice.values()]
+
+    def long_rest(self):
+        [d.reset() for d in self.dice.values()]
+
+    def use(self, die_str):
+        try:
+            return self.dice[die_str].use()
+        except:
+            print("out of hit {}".format(die_str))
