@@ -65,6 +65,9 @@ class Character(object):
         with open(character_file, "r") as char_file:
             stats = json.loads(char_file.read())
 
+        with open("backup_" + character_file, "w") as backup:
+            backup.write(json.dumps(stats))
+
         self.skills = [Skill(**s) for s in stats['skills']]
         self.str = stats['str']
         self.dex = stats['dex']
@@ -85,6 +88,8 @@ class Character(object):
         self.pass_perc = stats['pass_perc']
         self.prof_bonus = stats['prof_bonus']
 
+        self.class_skills_list = stats['class-skills']
+
         self.hitdice = HitDice(self.prof_bonus, stats)
         self.inventory = Inventory(stats['inventory'])
 
@@ -102,8 +107,13 @@ class Character(object):
         skills = {"skills": [s.to_dict() for s in self.skills]}
         saved_stats.update(skills)
 
+        saved_stats.update({"class-skills": self.class_skills_list})
         with open(self.char_file, "w") as save_file:
             save_file.write(json.dumps(saved_stats, indent=2))
+
+    @property
+    def class_skills(self):
+        pass
 
     @property
     def stats(self):
@@ -132,7 +142,7 @@ class Character(object):
         self.save(character_file)
 
     def show_skills(self):
-        print("|{0} Inventory {0}|".format('*' * 20))
+        print("|{0} Skills {0}|".format('*' * 20))
         for skill in self.skills:
             print("{:<20} : {}".format(skill.name, skill.get_mod()))
 
@@ -149,7 +159,7 @@ def mod(stat):
 if __name__ == "__main__":
     stab = Character()
 
-    with stab.load("stab.json"):
+    with stab.load("benjen.json"):
         print(stab.initiative)
         stab.hitdice.use('d6')
         print(stab.curr_hp)

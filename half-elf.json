@@ -1,0 +1,42 @@
+{
+    "ability-bonuses": [
+        {
+            "ability": "dex",
+            "bonus": 1 
+        },
+        {
+            "ability": "str",
+            "bonus": 1 
+        },
+        {
+            "ability": "cha",
+            "bonus": "2"
+        }
+    ],
+    "speed": 6,
+    "racial-skills": [
+        {
+            "name": "darkvision",
+            "type": "passive",
+            "description": "See in dim light within 60ft; an darkness as if dim light; no colors, just gray"
+        },
+        {
+            "name": "fey ancestry",
+            "type": "passive",
+            "description": "Advantage against being charmed; cant be put to sleep with magic."
+        },
+        {
+            "name": "skill versatility",
+            "type": "passive",
+            "description": "proficiency in two skills of your choice."
+        },
+        {
+            "name": "languages",
+            "type": "passive",
+            "description": "common, elvish, one extra"
+        }
+ 
+    ]
+
+
+}

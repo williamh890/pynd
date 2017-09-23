@@ -1,0 +1,71 @@
+{
+    "proficiencies": 
+    {
+        "armor": [],
+        "weapon": [
+            "daggers",
+            "darts",
+            "slings",
+            "quarterstaffs",
+            "light crossbows"
+        ]
+    },
+
+    "saving-throws": [
+        "con",
+        "cha"
+    ],
+
+    "hit-points":
+    {
+        "start": "6 + con score",
+
+        "hitdice-per-level": {
+            "amount": 1,
+            "dice": "d6"
+        },
+
+        "per-level": {
+            "base": 4,
+            "bonus":  "con"
+        }
+    },
+
+    "hitdice": [
+        {
+            "dice": "d6",
+            "curr": 0,
+            "max": 0
+        }
+    ], 
+
+    "trained-skills": [
+        "persuasion",
+        "deception"
+    ],
+
+    "cantrips": [
+        "amount",
+        4
+    ],
+
+    "spell-slots": [
+        2
+    ],
+
+    "metamagic": [
+        {
+            "name": "empowered spell",
+            "type": "combat",
+            "description": "reroll num of dmg dice based on char mod, must use new roll. (can use even if other metamagic used)",
+            "cost": 1
+        },
+        {
+            "name": "quickened spell",
+            "type": "combat",
+            "description": "change casting time from 1 action to 1 bonus action",
+            "cost": 2
+        }
+    ], 
+
+}

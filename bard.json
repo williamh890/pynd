@@ -1,0 +1,57 @@
+{
+    "proficiencies": 
+    {
+        "armor": [
+            "light armor"
+        ],
+        "weapon": [
+            "simple weapons",
+            "hand corssbows",
+            "longswords",
+            "rapiers",
+            "shortswords"
+        ],
+        "tools": [
+            "drum",
+            "loot",
+            "marcas"
+        ]
+    },
+
+    "saving-throws": [
+        "dex",
+        "cha"
+    ],
+
+    "hit-points":
+    {
+        "start": 
+        {
+            "base": 8,
+            "bonus": "con"
+        },
+
+        "hitdice-per-level": {
+            "amount": 1,
+            "dice": "d8"
+        },
+
+        "per-level": {
+            "base": 5,
+            "bonus": "con"
+        }
+    },
+
+    "hitdice": [
+        {
+            "dice": "d8",
+            "curr": 0,
+            "max": 0
+        }
+    ], 
+
+    "trained-skills": [
+        "choose 3"
+    ],
+
+    }

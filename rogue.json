@@ -1,0 +1,69 @@
+{
+    "proficiencies": 
+    {
+        "armor": [
+            "light armor"
+        ],
+        "weapon": [
+            "simple weapons",
+            "hand corssbows",
+            "longswords",
+            "rapiers",
+            "shortswords"
+        ]
+    },
+
+    "saving-throws": [
+        "dex",
+        "int"
+    ],
+
+    "hit-points":
+    {
+        "start": "6 + con score",
+
+        "hitdice-per-level": {
+            "amount": 1,
+            "dice": "d6"
+        },
+
+        "per-level": {
+            "base": 4,
+            "bonus":  "con"
+        }
+    },
+
+    "hitdice": [
+        {
+            "dice": "d6",
+            "curr": 0,
+            "max": 0
+        }
+    ], 
+
+    "trained-skills": [
+        "persuasion",
+        "deception"
+    ],
+
+    "cantrips": [
+        "amount",
+        4
+    ],
+
+    "spell-slots": [
+        2
+    ],
+
+       "class-traits": [
+        {
+            "name": "wild magic surge",
+            "description": "after sorcerer spell of 1st lvl or >, roll a d20 => if 1, roll on wild magic surge table."
+        },
+        {
+            "name": "tides of chaos",
+            "description": "gain advantage on one attack roll, ability check, or saving throw. cooldown until next long rest. dm can make you roll on the wild magic surge table.",
+            "active": 1
+        }
+    ]
+}

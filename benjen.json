@@ -1,0 +1,171 @@
+{
+  "curr_hp": 58,
+  "wis": 10,
+  "dex": 18,
+  "prof_bonus": 3,
+  "str": 8,
+  "ac": 15,
+  "skills": [
+    {
+      "stat": "dex",
+      "training": "none",
+      "name": "Acrobaics"
+    },
+    {
+      "stat": "wis",
+      "training": 0,
+      "name": "Animal Handling"
+    },
+    {
+      "stat": "int",
+      "training": "perficient",
+      "name": "Acana"
+    },
+    {
+      "stat": "str",
+      "training": "none",
+      "name": "Athletics"
+    },
+    {
+      "stat": "cha",
+      "training": "perficient",
+      "name": "Deception"
+    },
+    {
+      "stat": "int",
+      "training": 0,
+      "name": "History"
+    },
+    {
+      "stat": "wis",
+      "training": "perficient",
+      "name": "Insight"
+    },
+    {
+      "stat": "cha",
+      "training": "perficient",
+      "name": "Intimidation"
+    },
+    {
+      "stat": "int",
+      "training": "perficient",
+      "name": "Investigation"
+    },
+    {
+      "stat": "wis",
+      "training": 0,
+      "name": "Medicine"
+    },
+    {
+      "stat": "int",
+      "training": 0,
+      "name": "Nature"
+    },
+    {
+      "stat": "wis",
+      "training": "expertice",
+      "name": "Perception"
+    },
+    {
+      "stat": "cha",
+      "training": "perficient",
+      "name": "Performance"
+    },
+    {
+      "stat": "cha",
+      "training": "perficient",
+      "name": "Persuasion"
+    },
+    {
+      "stat": "int",
+      "training": 0,
+      "name": "Religion"
+    },
+    {
+      "stat": "dex",
+      "training": "perficient",
+      "name": "Sleight of Hand"
+    },
+    {
+      "stat": "dex",
+      "training": "expertic",
+      "name": "Stealth"
+    },
+    {
+      "stat": "wis",
+      "training": "none",
+      "name": "Survival"
+    }
+  ],
+  "speed": 7,
+  "con": 14,
+  "inventory": [
+    {
+      "amount": 3,
+      "name": "shabby necklace"
+    },
+    {
+      "amount": 1,
+      "name": "bag of beans"
+    },
+    {
+      "amount": 1,
+      "name": "small alchemy jug"
+    },
+    {
+      "amount": 1,
+      "name": "cube of force"
+    },
+    {
+      "amount": 4,
+      "name": "rustic ring"
+    },
+    {
+      "amount": 1,
+      "name": "rope of climbing"
+    },
+    {
+      "amount": 1,
+      "name": "oil of slipperiness"
+    },
+    {
+      "amount": 1,
+      "name": "ring of animal influence"
+    },
+    {
+      "amount": 1,
+      "name": "dust of sneezing and choking"
+    }
+  ],
+  "hitdice": [
+    {
+      "max": 0,
+      "dice": "d12",
+      "curr": 0
+    },
+    {
+      "max": 0,
+      "dice": "d10",
+      "curr": 0
+    },
+    {
+      "max": 1,
+      "dice": "d6",
+      "curr": 0
+    },
+    {
+      "max": 5,
+      "dice": "d8",
+      "curr": 5
+    }
+  ],
+  "cha": 19,
+  "max_hp": 54,
+  "int": 10,
+  "class-skills": {
+    "sorcerer": [],
+    "bard": [],
+    "rogue": []
+  },
+  "pass_perc": 13
+}
