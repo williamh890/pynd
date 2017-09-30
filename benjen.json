@@ -1,171 +1,224 @@
 {
-  "curr_hp": 58,
+  "ac": 15,
   "wis": 10,
   "dex": 18,
-  "prof_bonus": 3,
-  "str": 8,
-  "ac": 15,
+  "hitdice": [
+    {
+      "curr": 0,
+      "max": 0,
+      "dice": "d10"
+    },
+    {
+      "curr": 0,
+      "max": 1,
+      "dice": "d6"
+    },
+    {
+      "curr": 5,
+      "max": 5,
+      "dice": "d8"
+    },
+    {
+      "curr": 0,
+      "max": 0,
+      "dice": "d12"
+    }
+  ],
+  "curr_hp": 58,
+  "pass_perc": 13,
   "skills": [
     {
       "stat": "dex",
-      "training": "none",
-      "name": "Acrobaics"
+      "name": "Acrobaics",
+      "training": "none"
     },
     {
       "stat": "wis",
-      "training": 0,
-      "name": "Animal Handling"
+      "name": "Animal Handling",
+      "training": "none"
     },
     {
       "stat": "int",
-      "training": "perficient",
-      "name": "Acana"
+      "name": "Acana",
+      "training": "perficient"
     },
     {
       "stat": "str",
-      "training": "none",
-      "name": "Athletics"
+      "name": "Athletics",
+      "training": "none"
     },
     {
       "stat": "cha",
-      "training": "perficient",
-      "name": "Deception"
+      "name": "Deception",
+      "training": "perficient"
     },
     {
       "stat": "int",
-      "training": 0,
-      "name": "History"
+      "name": "History",
+      "training": "none"
     },
     {
       "stat": "wis",
-      "training": "perficient",
-      "name": "Insight"
+      "name": "Insight",
+      "training": "perficient"
     },
     {
       "stat": "cha",
-      "training": "perficient",
-      "name": "Intimidation"
+      "name": "Intimidation",
+      "training": "perficient"
     },
     {
       "stat": "int",
-      "training": "perficient",
-      "name": "Investigation"
+      "name": "Investigation",
+      "training": "perficient"
     },
     {
       "stat": "wis",
-      "training": 0,
-      "name": "Medicine"
+      "name": "Medicine",
+      "training": "none"
     },
     {
       "stat": "int",
-      "training": 0,
-      "name": "Nature"
+      "name": "Nature",
+      "training": "none"
     },
     {
       "stat": "wis",
-      "training": "expertice",
-      "name": "Perception"
+      "name": "Perception",
+      "training": "expertice"
     },
     {
       "stat": "cha",
-      "training": "perficient",
-      "name": "Performance"
+      "name": "Performance",
+      "training": "perficient"
     },
     {
       "stat": "cha",
-      "training": "perficient",
-      "name": "Persuasion"
+      "name": "Persuasion",
+      "training": "perficient"
     },
     {
       "stat": "int",
-      "training": 0,
-      "name": "Religion"
+      "name": "Religion",
+      "training": "none"
     },
     {
       "stat": "dex",
-      "training": "perficient",
-      "name": "Sleight of Hand"
+      "name": "Sleight of Hand",
+      "training": "perficient"
     },
     {
       "stat": "dex",
-      "training": "expertic",
-      "name": "Stealth"
+      "name": "Stealth",
+      "training": "expertic"
     },
     {
       "stat": "wis",
-      "training": "none",
-      "name": "Survival"
+      "name": "Survival",
+      "training": "none"
+    }
+  ],
+  "int": 10,
+  "classes": [
+    {
+      "name": "Bard",
+      "skills": [
+        {
+          "description": "Bonus action, give a creature (60ft) one d6 inspriation dice. Can be added to ability check, attack roll, or saving throws.",
+          "name": "Bardic Inspiration"
+        },
+        {
+          "description": "Add half your proficiency bonus, rounded down, to any ability check you make that doesn\u2019t already include your proficiency bonus.",
+          "name": "Jack of All Trades"
+        },
+        {
+          "description": "People in ear shot get extra d6 on short rest.",
+          "name": "Song of Rest"
+        },
+        {
+          "description": "Expend use of Bardic Inspiration, subtract it from creatures roll.",
+          "name": "Cutting Words"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "name": "Rogue",
+      "skills": [
+        {
+          "description": "extra d6 to attacks with advantage.",
+          "name": "Sneak Attack"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "name": "Sorcerer",
+      "skills": [],
+      "level": 5
     }
   ],
   "speed": 7,
+  "cha": 19,
   "con": 14,
+  "str": 8,
+  "prof_bonus": 3,
+  "max_hp": 54,
   "inventory": [
     {
+      "amount": 1,
+      "description": "only true statements are able to be written in this tomb.",
+      "name": "book of truth"
+    },
+    {
       "amount": 3,
+      "description": "",
       "name": "shabby necklace"
     },
     {
       "amount": 1,
+      "description": "wonder what these actually do?",
       "name": "bag of beans"
     },
     {
       "amount": 1,
+      "description": "A random liquid comes out every dawn.",
       "name": "small alchemy jug"
     },
     {
       "amount": 1,
+      "description": "",
       "name": "cube of force"
     },
     {
       "amount": 4,
+      "description": "",
       "name": "rustic ring"
     },
     {
       "amount": 1,
+      "description": "its actually just a rope.",
       "name": "rope of climbing"
     },
     {
       "amount": 1,
+      "description": "Thick, dark, slippy goo.",
       "name": "oil of slipperiness"
     },
     {
       "amount": 1,
+      "description": "",
       "name": "ring of animal influence"
     },
     {
       "amount": 1,
+      "description": "",
       "name": "dust of sneezing and choking"
+    },
+    {
+      "amount": 1,
+      "description": "",
+      "name": "maracas"
     }
-  ],
-  "hitdice": [
-    {
-      "max": 0,
-      "dice": "d12",
-      "curr": 0
-    },
-    {
-      "max": 0,
-      "dice": "d10",
-      "curr": 0
-    },
-    {
-      "max": 1,
-      "dice": "d6",
-      "curr": 0
-    },
-    {
-      "max": 5,
-      "dice": "d8",
-      "curr": 5
-    }
-  ],
-  "cha": 19,
-  "max_hp": 54,
-  "int": 10,
-  "class-skills": {
-    "sorcerer": [],
-    "bard": [],
-    "rogue": []
-  },
-  "pass_perc": 13
+  ]
 }

@@ -1,0 +1,42 @@
+{
+    "ability-bonuses": [
+        {
+            "ability": "dex",
+            "bonus": 2
+        },
+        {
+            "ability": "cha",
+            "bonus": "2"
+        }
+    ],
+    "speed": 6,
+    "skill-bonuses": [
+        {
+            "skill": "acrobatics",
+            "bonus": 2
+        },
+        {
+            "skill": "thievery",
+            "bonus": 2
+        }
+    ],
+    "racial-skills": [
+        {
+            "name": "bold",
+            "type": "passive",
+            "description": "You gain a +5 racial bonus to saving throws against fear."
+        },
+        {
+            "name": "Nible Reaction",
+            "type": "passive",
+            "description": "You gain a +2 racial bonus to AC against opportunity attacks."
+        },
+        {
+            "name": "Second Chance",
+            "type": "combat",
+            "description": "When an attack hits you, force an enemy to roll the attack again. The enemy uses the second roll, even if it's lower."
+        }
+    ]
+
+
+}
