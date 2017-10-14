@@ -1,8 +1,10 @@
 
 from items import Inventory
-from utils import mod
+from utils import mod, get_proficiency_bonus
 from dice import HitDice
+from classes import class_factory
 
+import math
 import json
 from contextlib import contextmanager
 
@@ -20,7 +22,12 @@ class Character(object):
         with open("backup_" + character_file, "w") as backup:
             backup.write(json.dumps(stats, indent=2))
 
-        self.skills = [Skill(**s) for s in stats['skills']]
+        self.classes = [class_factory(**c) for c in stats['classes']]
+        self.total_level = sum([c.level for c in self.classes])
+        self.prof_bonus = get_proficiency_bonus(self.total_level)
+
+        self.skills = [Skill(self.prof_bonus, **s) for s in stats['skills']]
+
         self.str = stats['str']
         self.dex = stats['dex']
         self.con = stats['con']
@@ -38,9 +45,6 @@ class Character(object):
         self.speed = stats['speed']
         self.ac = stats['ac']
         self.pass_perc = stats['pass_perc']
-        self.prof_bonus = stats['prof_bonus']
-
-        self.classes = [Class(**c) for c in stats['classes']]
 
         self.hitdice = HitDice(self.prof_bonus, stats)
         self.inventory = Inventory(stats['inventory'])
@@ -69,17 +73,21 @@ class Character(object):
         for c in self.classes:
             print(c)
         self.show_skills()
+        self.show_mods()
 
     @property
     def class_skills(self):
         pass
 
     @property
+    def stat_keys(self):
+        return ['str', 'dex', 'con', 'int', 'wis', 'cha']
+
+    @property
     def stats(self):
-        s_keys = ['str', 'dex', 'con', 'int', 'wis', 'cha']
         ret_stats = {}
 
-        for stat in s_keys:
+        for stat in self.stat_keys:
             ret_stats[stat] = eval('self.' + stat)
 
         return ret_stats
@@ -100,6 +108,14 @@ class Character(object):
         yield
         self.save(character_file)
 
+    @property
+    def spell_save(self):
+        return 8 + self.spell_attack_mod
+
+    @property
+    def spell_attack_mod(self):
+        return mod(self.char) + self.prof_bonus
+
     def show_skills(self):
         print("|{0} Skills {0}|".format('*' * 20))
         for skill in self.skills:
@@ -114,12 +130,17 @@ class Character(object):
         for c in self.classes:
             print(c)
 
+    def show_mods(self):
+        print("|********** MODS ************|")
+        for label, stat in self.stats.items():
+            print("{}    : {}".format(label, mod(stat)))
+
 
 class Skill(object):
-    def __init__(self, **kwargs):
+    def __init__(self, prof_bonus, **kwargs):
         self.name = kwargs['name']
         self.stat = kwargs['stat']
-
+        self.prof_bonus = prof_bonus
         self.training = kwargs.get('training', 'none')
 
     def set_stat_mod(self, bonus):
@@ -128,9 +149,9 @@ class Skill(object):
     @property
     def training_mod(self):
         return {
-            'perficient': 3,
-            'expertic': 2 * 3,
-            'none': 0
+            'perficient': self.prof_bonus,
+            'expertic': 2 * self.prof_bonus,
+            'none': math.floor(self.prof_bonus / 2)
         }.get(self.training, 0)
 
     def get_mod(self):
@@ -142,26 +163,3 @@ class Skill(object):
             ret_dict[prop] = eval('self.' + prop)
 
         return ret_dict
-
-
-class Class(object):
-    def __init__(self, **kwargs):
-        self.name = kwargs['name']
-        self.level = kwargs['level']
-        self.skills = kwargs.get('skills', [])
-
-    def __str__(self):
-        class_str = "|----- {} ({}) -----|\n".format(self.name, self.level)
-
-        for skill in self.skills:
-            class_str += "-> {} : \n\t{}\n".format(
-                skill['name'], skill['description'])
-
-        return class_str
-
-    def to_dict(self):
-        return {
-            "level": self.level,
-            "skills": self.skills,
-            "name": self.name
-        }

@@ -1,224 +1,314 @@
 {
-  "ac": 15,
-  "wis": 10,
-  "dex": 18,
-  "hitdice": [
+  "inventory": [
     {
-      "curr": 0,
-      "max": 0,
-      "dice": "d10"
+      "name": "book of truth",
+      "amount": 1,
+      "description": "only true statements are able to be written in this tomb."
     },
     {
-      "curr": 0,
-      "max": 1,
-      "dice": "d6"
+      "name": "shabby necklace",
+      "amount": 3,
+      "description": ""
     },
     {
-      "curr": 5,
-      "max": 5,
-      "dice": "d8"
+      "name": "bag of beans",
+      "amount": 1,
+      "description": "wonder what these actually do?"
     },
     {
-      "curr": 0,
-      "max": 0,
-      "dice": "d12"
+      "name": "small alchemy jug",
+      "amount": 1,
+      "description": "A random liquid comes out every dawn."
+    },
+    {
+      "name": "cube of force",
+      "amount": 1,
+      "description": ""
+    },
+    {
+      "name": "rustic ring",
+      "amount": 4,
+      "description": ""
+    },
+    {
+      "name": "rope of climbing",
+      "amount": 1,
+      "description": "its actually just a rope."
+    },
+    {
+      "name": "oil of slipperiness",
+      "amount": 1,
+      "description": "Thick, dark, slippy goo."
+    },
+    {
+      "name": "ring of animal influence",
+      "amount": 1,
+      "description": ""
+    },
+    {
+      "name": "dust of sneezing and choking",
+      "amount": 1,
+      "description": ""
+    },
+    {
+      "name": "maracas",
+      "amount": 1,
+      "description": ""
     }
   ],
-  "curr_hp": 58,
-  "pass_perc": 13,
-  "skills": [
-    {
-      "stat": "dex",
-      "name": "Acrobaics",
-      "training": "none"
-    },
-    {
-      "stat": "wis",
-      "name": "Animal Handling",
-      "training": "none"
-    },
-    {
-      "stat": "int",
-      "name": "Acana",
-      "training": "perficient"
-    },
-    {
-      "stat": "str",
-      "name": "Athletics",
-      "training": "none"
-    },
-    {
-      "stat": "cha",
-      "name": "Deception",
-      "training": "perficient"
-    },
-    {
-      "stat": "int",
-      "name": "History",
-      "training": "none"
-    },
-    {
-      "stat": "wis",
-      "name": "Insight",
-      "training": "perficient"
-    },
-    {
-      "stat": "cha",
-      "name": "Intimidation",
-      "training": "perficient"
-    },
-    {
-      "stat": "int",
-      "name": "Investigation",
-      "training": "perficient"
-    },
-    {
-      "stat": "wis",
-      "name": "Medicine",
-      "training": "none"
-    },
-    {
-      "stat": "int",
-      "name": "Nature",
-      "training": "none"
-    },
-    {
-      "stat": "wis",
-      "name": "Perception",
-      "training": "expertice"
-    },
-    {
-      "stat": "cha",
-      "name": "Performance",
-      "training": "perficient"
-    },
-    {
-      "stat": "cha",
-      "name": "Persuasion",
-      "training": "perficient"
-    },
-    {
-      "stat": "int",
-      "name": "Religion",
-      "training": "none"
-    },
-    {
-      "stat": "dex",
-      "name": "Sleight of Hand",
-      "training": "perficient"
-    },
-    {
-      "stat": "dex",
-      "name": "Stealth",
-      "training": "expertic"
-    },
-    {
-      "stat": "wis",
-      "name": "Survival",
-      "training": "none"
-    }
-  ],
-  "int": 10,
   "classes": [
     {
       "name": "Bard",
+      "level": 3,
       "skills": [
         {
-          "description": "Bonus action, give a creature (60ft) one d6 inspriation dice. Can be added to ability check, attack roll, or saving throws.",
-          "name": "Bardic Inspiration"
+          "name": "Bardic Inspiration",
+          "description": "Bonus action, give a creature (60ft) one d6 inspriation dice. Can be added to ability check, attack roll, or saving throws."
         },
         {
-          "description": "Add half your proficiency bonus, rounded down, to any ability check you make that doesn\u2019t already include your proficiency bonus.",
-          "name": "Jack of All Trades"
+          "name": "Jack of All Trades",
+          "description": "Add half your proficiency bonus, rounded down, to any ability check you make that doesn\u2019t already include your proficiency bonus."
         },
         {
-          "description": "People in ear shot get extra d6 on short rest.",
-          "name": "Song of Rest"
+          "name": "Song of Rest",
+          "description": "People in ear shot get extra d6 on short rest."
         },
         {
-          "description": "Expend use of Bardic Inspiration, subtract it from creatures roll.",
-          "name": "Cutting Words"
+          "name": "Cutting Words",
+          "description": "Expend use of Bardic Inspiration, subtract it from creatures roll."
         }
       ],
-      "level": 3
+      "spells": [
+        {
+          "name": "Cure Wounds",
+          "level": 1,
+          "description": "touch creature to heal 1d8 + spellcasting attack mod"
+        },
+        {
+          "name": "Sleep",
+          "level": 1,
+          "description": "Roll 5d8; the total is how many hit points of creatures this spell can affect. 20 ft range, affects lowest-highest hp creatures. Subtract total hp of creature then move to next creature."
+        },
+        {
+          "name": "Heroism",
+          "level": 2,
+          "description": "(1 min, Concentration) 2 Creatures are immune to being frightened and gains temp hp equal to spellcasting attack mod. Looses hp when spell ends."
+        },
+        {
+          "name": "Enhance Ability",
+          "level": 2,
+          "description": "(1 hr, Concentration), can be one of the following efferts:\n\t- Bear\u2019s Endurance: Advantage on Cons checks, also gains 2d6 temp hp, lost on spell ending.\n\t- Bull\u2019s Strength: Advantage on Str checks, carrying capacity doubles.\n\t- Cat\u2019s Grace: Advantage on Dex checks, no dmg from falling 20 feet or less if it not incapacitated.\n\t- Eagle\u2019s Splendor: Advantage on Cha checks.\n\t- Fox\u2019s Cunning: Advantage on Int checks.\n\t- Owl\u2019s Wisdom: Advantage on Wis checks."
+        }
+      ],
+      "cantrips": [
+        {
+          "name": "Friends",
+          "description": "For 1 minute, gain advantage on char checks towards 1 creature. The creature is hostile afterwords."
+        },
+        {
+          "name": "Vicious Mockery",
+          "description": " If the target can hear you, it must succeed on a wis throw or take 1d4 psychic damage and have disadvantage on next attack roll it makes before the end of its next turn."
+        }
+      ]
     },
     {
       "name": "Rogue",
+      "level": 1,
       "skills": [
         {
-          "description": "extra d6 to attacks with advantage.",
-          "name": "Sneak Attack"
+          "name": "Sneak Attack",
+          "description": "extra d6 to attacks with advantage."
         }
       ],
-      "level": 1
+      "spells": [],
+      "cantrips": []
     },
     {
       "name": "Sorcerer",
       "skills": [],
-      "level": 5
+      "spells": [
+        {
+          "name": "Mage Armour",
+          "level": 1,
+          "description": "(8 hr) willing creatures AC becomes 13 + dex mod."
+        },
+        {
+          "name": "Levitate",
+          "level": 2,
+          "description": "(10 min, Concentration) Levitate target up to 20 ft, con save if not willing. 500 lb limit."
+        },
+        {
+          "name": "Aganazzar's Scorcher",
+          "level": 2,
+          "description": "Line of flame 30ft by 5 ft, creature must make a dex if fails 3d8 else half that."
+        },
+        {
+          "name": "Snilloc's Snowball Swarm",
+          "level": 2,
+          "description": "point errupts with snowballs in a 2 by 2 square within 90 ft. Each creature makes dex save, 3d6 damage or half damage if succeeds. "
+        },
+        {
+          "name": "Errupting Earth",
+          "level": 3,
+          "description": "120 ft range. chucked earth and stone errupts in 20ft cube centered at point. dex save, 3d12 or half damage on failure. Cube is rough terrain until cleared."
+        },
+        {
+          "name": "Fireball",
+          "level": 3,
+          "description": "150 ft range. Each creature in 20ft radius makes dex throw. 8d6 or half damage if succeeds."
+        }
+      ],
+      "max_sorcery_points": 5,
+      "level": 6,
+      "current_sorcery_points": 5,
+      "cantrips": [
+        {
+          "name": "Frostbite",
+          "description": "con save, if fails, does 1d6 of damage and weapon attack on next turn has disadvantage."
+        },
+        {
+          "name": "Poison Spray",
+          "description": "con save, if fails, 1d12 of damage to creature within 10 ft."
+        },
+        {
+          "name": "Minor Illusion",
+          "description": "(1 min) sound or image of object within 30 ft. Object must fit into 5 ft cube. obj cannot create sensory effects and is revealed when interacted with. Investigation against spell save DC."
+        },
+        {
+          "name": "Sword Burst",
+          "description": "Circle of blades around you. Each creature in range, other than you, must make dex save or take 1d6."
+        },
+        {
+          "name": "Fire Bolt",
+          "description": "hurl a fireball in 120ft range as spell attack, does 1d10 of dmg. Ignites its not being worn or carried."
+        }
+      ]
     }
   ],
+  "str": 8,
+  "skills": [
+    {
+      "name": "Acrobaics",
+      "training": "none",
+      "stat": "dex"
+    },
+    {
+      "name": "Animal Handling",
+      "training": "none",
+      "stat": "wis"
+    },
+    {
+      "name": "Acana",
+      "training": "perficient",
+      "stat": "int"
+    },
+    {
+      "name": "Athletics",
+      "training": "none",
+      "stat": "str"
+    },
+    {
+      "name": "Deception",
+      "training": "perficient",
+      "stat": "cha"
+    },
+    {
+      "name": "History",
+      "training": "none",
+      "stat": "int"
+    },
+    {
+      "name": "Insight",
+      "training": "perficient",
+      "stat": "wis"
+    },
+    {
+      "name": "Intimidation",
+      "training": "perficient",
+      "stat": "cha"
+    },
+    {
+      "name": "Investigation",
+      "training": "perficient",
+      "stat": "int"
+    },
+    {
+      "name": "Medicine",
+      "training": "none",
+      "stat": "wis"
+    },
+    {
+      "name": "Nature",
+      "training": "none",
+      "stat": "int"
+    },
+    {
+      "name": "Perception",
+      "training": "expertic",
+      "stat": "wis"
+    },
+    {
+      "name": "Performance",
+      "training": "perficient",
+      "stat": "cha"
+    },
+    {
+      "name": "Persuasion",
+      "training": "perficient",
+      "stat": "cha"
+    },
+    {
+      "name": "Religion",
+      "training": "none",
+      "stat": "int"
+    },
+    {
+      "name": "Sleight of Hand",
+      "training": "perficient",
+      "stat": "dex"
+    },
+    {
+      "name": "Stealth",
+      "training": "expertic",
+      "stat": "dex"
+    },
+    {
+      "name": "Survival",
+      "training": "none",
+      "stat": "wis"
+    }
+  ],
+  "prof_bonus": 4,
+  "pass_perc": 13,
+  "curr_hp": 58,
+  "ac": 15,
+  "max_hp": 20,
+  "int": 10,
   "speed": 7,
   "cha": 19,
-  "con": 14,
-  "str": 8,
-  "prof_bonus": 3,
-  "max_hp": 54,
-  "inventory": [
+  "hitdice": [
     {
-      "amount": 1,
-      "description": "only true statements are able to be written in this tomb.",
-      "name": "book of truth"
+      "dice": "d12",
+      "curr": 0,
+      "max": 0
     },
     {
-      "amount": 3,
-      "description": "",
-      "name": "shabby necklace"
+      "dice": "d10",
+      "curr": 0,
+      "max": 0
     },
     {
-      "amount": 1,
-      "description": "wonder what these actually do?",
-      "name": "bag of beans"
+      "dice": "d6",
+      "curr": 0,
+      "max": 1
     },
     {
-      "amount": 1,
-      "description": "A random liquid comes out every dawn.",
-      "name": "small alchemy jug"
-    },
-    {
-      "amount": 1,
-      "description": "",
-      "name": "cube of force"
-    },
-    {
-      "amount": 4,
-      "description": "",
-      "name": "rustic ring"
-    },
-    {
-      "amount": 1,
-      "description": "its actually just a rope.",
-      "name": "rope of climbing"
-    },
-    {
-      "amount": 1,
-      "description": "Thick, dark, slippy goo.",
-      "name": "oil of slipperiness"
-    },
-    {
-      "amount": 1,
-      "description": "",
-      "name": "ring of animal influence"
-    },
-    {
-      "amount": 1,
-      "description": "",
-      "name": "dust of sneezing and choking"
-    },
-    {
-      "amount": 1,
-      "description": "",
-      "name": "maracas"
+      "dice": "d8",
+      "curr": 5,
+      "max": 5
     }
-  ]
+  ],
+  "con": 14,
+  "dex": 18,
+  "wis": 10
 }

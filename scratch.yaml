@@ -1,0 +1,35 @@
+bard:
+    cantrips:
+        amount: 2
+          - Viscious Mockery
+          - Friends
+        spells:
+            level 1: 2
+              - Sleep
+              - Cure Wounds
+            level 2: 2
+              - Heroism
+              - Enhance Ability
+
+sorcerer:
+    cantrips:
+        amount: 5
+          - Poison Spray
+          - Frostbite
+          - Minor Illusion
+          - Sword Burst
+          - Fire Bolt
+
+        spells:
+            level 1: 1
+              - Mage Armour
+            level 2: 3
+              - Levitate
+              - Aganazzar's Scorcher
+              - Snilloc Snowball Storm
+            level 3: 2
+              - Errupting Earth
+              - Fireball
+
+
+NEED TO DO SORCERER LEVEL UP!!

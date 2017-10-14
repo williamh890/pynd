@@ -8,36 +8,41 @@ class Dice(object):
         pass
 
 
-class D6(Dice):
+class RollDice(Dice):
+    @abstractmethod
+    def __init__(self):
+        pass
+
     def get_type(self):
-        return "d6"
+        return "d" + str(self.max)
 
     def roll(self):
-        return randint(1, 6)
+        return randint(1, self.max)
 
 
-class D8(Dice):
-    def get_type(self):
-        return "d8"
-
-    def roll(self):
-        return randint(1, 8)
+class D6(RollDice):
+    def __init__(self):
+        self.max = 6
 
 
-class D10(Dice):
-    def get_type(self):
-        return "d10"
-
-    def roll(self):
-        return randint(1, 10)
+class D8(RollDice):
+    def __init__(self):
+        self.max = 8
 
 
-class D12(Dice):
-    def get_type(self):
-        return "d12"
+class D10(RollDice):
+    def __init__(self):
+        self.max = 10
 
-    def roll(self):
-        return randint(1, 12)
+
+class D12(RollDice):
+    def __init__(self):
+        self.max = 12
+
+
+class D20(RollDice):
+    def __init__(self):
+        self.max = 20
 
 
 class OutOfHitDieError(Exception):
