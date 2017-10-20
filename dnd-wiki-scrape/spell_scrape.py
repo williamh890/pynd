@@ -56,12 +56,12 @@ class SpellParser(object):
     def to_dict(self):
         name = self.ps[0].split(',')[0]
         type = self.ps[1].strip()
-        level = self.get_casting_info(self.ps[2])
+        info = self.get_casting_info(self.ps[2])
         description = self.ps[3].strip()
 
         return {
             "name": name, "type": type,
-            "level": level, "description": description
+            "info": info, "description": description
         }
 
     def get_casting_info(self, p):

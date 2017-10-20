@@ -1,2 +1,7 @@
 backup_*
 __pycache__
+
+benjen.sheet
+data
+scratch.txt
+

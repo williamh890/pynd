@@ -1,4 +1,5 @@
 from utils import format_attribute
+from class_components import ClassComponent, BaseComponent, SpellComponent, SorcererComponent, BardComponent
 
 
 def class_factory(**kwargs):
@@ -6,27 +7,32 @@ def class_factory(**kwargs):
 
     if name == "Sorcerer":
         return Sorcerer(**kwargs)
+    elif name == "Bard":
+        return Bard(**kwargs)
     else:
-        return Class(**kwargs)
+        return DefaultClass(**kwargs)
 
 
 class Class(object):
-    def __init__(self, **kwargs):
-        self.name = kwargs['name']
-        self.level = kwargs['level']
-        self.skills = kwargs.get('skills', [])
-        self.spells = kwargs.get('spells', [])
-        self.cantrips = kwargs['cantrips']
+    def __init__(self, components):
+        self.abilities = []
+        self.attributes = []
+
+        for component in components:
+            if not isinstance(component, ClassComponent):
+                raise TypeError("invalid compenent type")
+
+            self.abilities += component.get_abilities()
+            self.attributes += component.get_attributes()
+
+        for attr, label in self.attributes:
+            setattr(self, label, attr)
 
     def __str__(self):
         class_str = "|----- {} ({}) -----|\n".format(self.name, self.level)
 
-        abilities = [(self.skills, "SKILLS"),
-                     (self.spells, "SPELLS"),
-                     (self.cantrips, "CANTRIPS")]
-
-        for data, label in abilities:
-            if len(data) <= 0:
+        for data, label in self.abilities:
+            if len(data) < 1:
                 continue
 
             class_str += label + '\n'
@@ -37,32 +43,39 @@ class Class(object):
         return class_str
 
     def to_dict(self):
-        attrs = {
-            "level": self.level,
-            "skills": self.skills,
-            "name": self.name,
-            "spells": self.spells,
-            "cantrips": self.cantrips
-        }
-        attrs.update(self.extra_class_attrs())
+        attr_dict = {}
 
-        return attrs
+        for attr, label in self.attributes:
+            attr_dict[label] = attr
 
-    def extra_class_attrs(self):
-        return {}
+        return attr_dict
+
+
+class DefaultClass(Class):
+    def __init__(self, **kwargs):
+        components = [
+            BaseComponent(**kwargs)
+        ]
+
+        super().__init__(components)
 
 
 class Sorcerer(Class):
     def __init__(self, **kwargs):
-        self.max_sorcery_points = kwargs['max_sorcery_points']
-        self.current_sorcery_points = kwargs['current_sorcery_points']
+        components = [
+            BaseComponent(**kwargs),
+            SpellComponent(**kwargs),
+            SorcererComponent(**kwargs)
+        ]
 
-        super().__init__(**kwargs)
+        super().__init__(components)
 
-    def extra_class_attrs(self):
-        attrs, ret_dict = ['max_sorcery_points', 'current_sorcery_points'], {}
 
-        for attr in attrs:
-            ret_dict[attr] = eval('self.' + attr)
-
-        return ret_dict
+class Bard(Class):
+    def __init__(self, **kwargs):
+        components = [
+            BaseComponent(**kwargs),
+            SpellComponent(**kwargs),
+            BardComponent(**kwargs)
+        ]
+        super().__init__(components)
