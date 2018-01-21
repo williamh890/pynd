@@ -1,0 +1,151 @@
+|----- Bard (3) -----|
+
+Inspiration Dice: -2 (max 4)
+
+SKILLS
+-> Bardic Inspiration :
+	Bonus action, give a creature (60ft) one d6 inspriation dice. Can be added
+    to ability check, attack roll, or saving throws.
+-> Jack of All Trades :
+	Add half your proficiency bonus, rounded down, to any ability check you
+    make that doesn’t already include your proficiency bonus.
+-> Song of Rest :
+	People in ear shot get extra d6 on short rest.
+-> Cutting Words :
+	Expend use of Bardic Inspiration, subtract it from creatures roll.
+SPELLS
+-> Healing Word (1):
+    bonus action, heal 1d4 + spellcasting attack mod within 60 ft
+-> Cure Wounds (1):
+	touch creature to heal 1d8 + spellcasting attack mod
+-> Sleep (1):
+	Roll 5d8; the total is how many hit points of creatures this spell can affect.
+    20 ft range, affects lowest-highest hp creatures. Subtract total hp of
+    creature then move to next creature.
+-> Heroism (1):
+	(1 min, Concentration) 2 Creatures are immune to being frightened and gains
+    temp hp equal to spellcasting attack mod. Looses hp when spell ends.
+-> Blindness/Deafness:
+    30 ft range, con save, if fail then choose b or d (1 min duration).
+    At the end of each turn creature can make a con save.
+-> Enhance Ability (2):
+	(1 hr, Concentration), can be one of the following efferts:
+	- Bear’s Endurance: Advantage on Cons checks, also gains 2d6 temp hp,
+      lost on spell ending.
+	- Bull’s Strength: Advantage on Str checks, carrying capacity doubles.
+	- Cat’s Grace: Advantage on Dex checks, no dmg from falling 20
+      feet or less if it not incapacitated.
+	- Eagle’s Splendor: Advantage on Cha checks.
+	- Fox’s Cunning: Advantage on Int checks.
+	- Owl’s Wisdom: Advantage on Wis checks.
+CANTRIPS
+-> Friends :
+	For 1 minute, gain advantage on char checks towards 1 creature.
+    The creature is hostile afterwords.
+-> Vicious Mockery :
+	 If the target can hear you, it must succeed on a wis throw or take 1d4
+     psychic damage and have disadvantage on next attack roll it makes
+     before the end of its next turn.
+
+Spell Slots:
+lvl 2: -0 (2 max)
+lvl 1: -2 (4 max)
+
+|----- Rogue (1) -----|
+SKILLS
+-> Sneak Attack :
+	extra d6 to attacks with advantage.
+
+|----- Sorcerer (6) -----|
+SPELLS
+-> Guiding Bolt (1):
+    120ft range spell attack, on hit 4d6 radient damage. Next attack on
+    the creature has advantage.
+-> Magic Missle (1):
+    120ft range spell attach, 3 bolts hit target, 1d4 + 1 damage each.
+-> Levitate (2):
+	(10 min, Concentration) Levitate target up to 20 ft, con save if not willing. 500 lb limit.
+-> Aganazzar's Scorcher (2):
+	Line of flame 30ft by 5 ft, creature must make a dex if fails 3d8 else half that.
+-> Snilloc's Snowball Swarm (2) :
+	point errupts with snowballs in a 2 by 2 square within 90 ft. Each creature makes
+    dex save, 3d6 damage or half damage if succeeds.
+-> Errupting Earth (3) :
+	120 ft range. chucked earth and stone errupts in 20ft cube centered at point.
+    dex save, 3d12 or half damage on failure. Cube is rough terrain until cleared.
+-> Fireball (3):
+	150 ft range. Each creature in 20ft radius makes dex throw. 8d6 or half damage if succeeds.
+CANTRIPS
+-> Poison Spray :
+	con save, if fails, 1d12 of damage to creature within 10 ft.
+-> Minor Illusion :
+	(1 min) sound or image of object within 30 ft. Object must fit into 5 ft cube.
+    obj cannot create sensory effects and is revealed when interacted with.
+    Investigation against spell save DC.
+-> Sword Burst :
+	Circle of blades around you. Each creature in range, other than you,
+    must make dex save or take 1d6.
+-> Fire Bolt :
+	Hurl a fireball in 120ft range as spell attack, does 1d10 of dmg.
+    Ignites its not being worn or carried.
+
+Spell Slots:
+lvl 3: -1 (2 max)
+lvl 2: -1 (3 max)
+lvl 1: -0 (4 max)
+
+| Origin: Wild Magic |
+
+Sourcery Points: -4 (7 max)
+
+FEATURES:
+-> Wild Magic Surge:
+    on lvl 1 spell or higher, if you roll a 1 on a d20, roll on Wild Magic Surge Tables.
+-> Tides Of Chaos:
+    Can gain advantage on attack roll, ability check, or saving throw.
+    Can't use again until long rest.  While down, dm can trigger Wild Magic
+    Surge on lvl 1 spell.
+-> Bend Luck:
+    When another creature you can see makes an attack roll, an ability check, or a saving
+    throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply
+    the number rolled as a bonus or penalty (your choice) to the creature’s roll. You
+    can do so after the creature rolls but before any effects of the roll occur.
+
+|******************** Skills ********************|
+Acrobaics            : 6
+Animal Handling      : 2
+Acana                : 4
+Athletics            : 1
+Deception            : 8
+History              : 2
+Insight              : 4
+Intimidation         : 8
+Investigation        : 4
+Medicine             : 2
+Nature               : 2
+Perception           : 8
+Performance          : 8
+Persuasion           : 8
+Religion             : 2
+Sleight of Hand      : 8
+Stealth              : 12
+Survival             : 2
+|********** MODS ************|
+str    : -1
+dex    : 4
+con    : 2
+int    : 0
+wis    : 0
+cha    : 4
+
+HP: 58
+CURR: 17
+
+Prof bonus: 4
+
+Damage Mod: cha mod
+Spell Attack Mod: cha mod + prof bonus (8)
+Spell Attack Mod: 8 + cha mod + prof bonus (16)
+
+AC: 10 + dex mod (14)
+MOVE: 30ft (6 squares)

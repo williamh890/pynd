@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Potion of Animal Friendship",
+        "amount": "1"
+    },
+    {
+        "name": "Potion of spell slot",
+        "amount": "2"
+    },
+    {
+        "name": "Book of Inflict Wounds",
+        "amount": "6"
+    },
+    {
+        "name": "Create Undead",
+        "amount": "1"
+    },
+    {
+        "name": "Animate Dead",
+        "amount": "1"
+    },
+    {
+        "name": "Bane Blindness/Deafness",
+        "amount": "1"
+    },
+    {
+        "name": "Contact Other Plane",
+        "amount": "1"
+    },
+    {
+        "name": "Ruby" ,
+        "amount":  "4"
+    },
+    {
+        "name": "Fork",
+        "amount": 1,
+        "description": ""
+    },
+    {
+        "name": "Hard Hat",
+        "amount": 1
+    },
+    {
+        "name": "Choir of Truth Armour",
+        "amount": 1,
+        "description": ""
+    },
+    {
+        "name": "Book of Truth",
+        "amount": 1,
+        "description": "only true statements are able to be written in this tomb."
+    },
+    {
+        "name": "Shabby Necklace",
+        "amount": 3,
+        "description": ""
+    },
+    {
+        "name": "Bag of Beans",
+        "amount": 1,
+        "description": "wonder what these actually do?"
+    },
+    {
+        "name": "Small Alchemy Jug",
+        "amount": 1,
+        "description": "A random liquid comes out every dawn."
+    },
+    {
+        "name": "Cube of Force",
+        "amount": 1,
+        "description": ""
+    },
+    {
+        "name": "Rustic Ring",
+        "amount": 4,
+        "description": ""
+    },
+    {
+        "name": "Rope of Climbing",
+        "amount": 1,
+        "description": "its actually just a rope."
+    },
+    {
+        "name": "Oil of Slipperiness",
+        "amount": 1,
+        "description": "Thick, dark, slippy goo."
+    },
+    {
+        "name": "Ring of Animal Influence",
+        "amount": 1,
+        "description": ""
+    },
+    {
+        "name": "Dust of Sneezing and Choking",
+        "amount": 1,
+        "description": ""
+    },
+    {
+        "name": "Maracas",
+        "amount": 1,
+        "description": ""
+    }
+]
