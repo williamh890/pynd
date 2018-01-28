@@ -1,5 +1,34 @@
 [
     {
+        "name": "The Craft Of War",
+        "description": "moon zoo"
+    },
+    {
+        "name": "Raiper Compainion",
+        "description": "Sword that hovers around me and attacks what I point at."
+    },
+    {
+        "name": "Verisis Bone Flute",
+        "description": "smells funny, people get scared when I play it."
+    },
+    {
+        "name": "Verisis Demon Summoning Spellbook",
+        "amount": 1
+    },
+    {
+        "name": "Bag of Verisis Light Brown Dust",
+        "amount": 1
+    },
+    {
+        "name": "Marching Letter",
+        "description": "Zombie army planing to attack the quoir.",
+        "amount": "1"
+    },
+    {
+        "name": "Blood Stone",
+        "description": ""
+    },
+    {
         "name": "Potion of Animal Friendship",
         "amount": "1"
     },

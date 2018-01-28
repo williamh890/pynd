@@ -56,7 +56,7 @@ SKILLS
 -> Sneak Attack :
 	extra d6 to attacks with advantage.
 
-|----- Sorcerer (6) -----|
+|----- Sorcerer (8) -----|
 SPELLS
 -> Guiding Bolt (1):
     120ft range spell attack, on hit 4d6 radient damage. Next attack on
@@ -111,41 +111,47 @@ FEATURES:
     the number rolled as a bonus or penalty (your choice) to the creature’s roll. You
     can do so after the creature rolls but before any effects of the roll occur.
 
+Attacking Flying Sword Compainion
+
 |******************** Skills ********************|
-Acrobaics            : 6
-Animal Handling      : 2
-Acana                : 4
-Athletics            : 1
-Deception            : 8
-History              : 2
-Insight              : 4
-Intimidation         : 8
-Investigation        : 4
-Medicine             : 2
-Nature               : 2
-Perception           : 8
-Performance          : 8
-Persuasion           : 8
-Religion             : 2
-Sleight of Hand      : 8
-Stealth              : 12
+Acrobaics        DEX : 7
+Animal Handling  WIS : 2
+Acana            INT : 4
+Athletics        STR : 1
+Deception        CHA : 9
+History          INT : 2
+Insight          WIS : 4
+Intimidation     CHA : 9
+Investigation    INT : 4
+Medicine         WIS : 2
+Nature           INT : 2
+Perception       WIS : 8
+Performance      WIS : 8
+Persuasion       CHA : 9
+Religion         INT : 2
+Sleight of Hand  DEX : 9
+Stealth          DEX : 13
 Survival             : 2
 |********** MODS ************|
 str    : -1
-dex    : 4
+dex    : 5
 con    : 2
 int    : 0
 wis    : 0
-cha    : 4
+cha    : 5
 
-HP: 58
-CURR: 17
+HP: 70
+CURR: 70
 
 Prof bonus: 4
 
 Damage Mod: cha mod
-Spell Attack Mod: cha mod + prof bonus (8)
-Spell Attack Mod: 8 + cha mod + prof bonus (16)
+Spell Attack Mod: cha mod + prof bonus (9)
+Spell Attack Mod: 8 + cha mod + prof bonus (17)
 
 AC: 10 + dex mod (14)
 MOVE: 30ft (6 squares)
+
+
+Plot Notes:
+    -
