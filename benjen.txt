@@ -91,9 +91,9 @@ CANTRIPS
     Ignites its not being worn or carried.
 
 Spell Slots:
-lvl 3: -1 (2 max)
+lvl 3: -0 (2 max)
 lvl 2: -0 (3 max)
-lvl 1: -2 (4 max)
+lvl 1: -1 (4 max)
 
 | Origin: Wild Magic |
 
@@ -115,7 +115,7 @@ FEATURES:
 Attacking Flying Sword Compainion
 
 HP: 70
-CURR: 53
+CURR: 40
 
 Prof bonus: 4
 
@@ -153,5 +153,6 @@ int    : 0
 wis    : 0
 cha    : 5
 
-Plot Notes:
-    -
+Notes:
+    - quoir of truth have scares on back of neck/head
+    - only 5 gods can be around at a time

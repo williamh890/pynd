@@ -39,6 +39,30 @@
         "description": ""
     },
     {
+        "name": "gold",
+        "amount":"1210"
+    },
+    {
+        "name":"forged free bridge passage certificate",
+        "amount":"1"
+    },
+    {
+        "name": "median speed lethal poison (defiantly poison)",
+        "amount": "1"
+    },
+    {
+        "name": "Fancy white cape",
+        "amount": "1"
+    },
+    {
+        "name": "Holy Symbol",
+        "amount": "1"
+    },
+    {
+        "name": "Stone of Farspeak",
+        "amount": "1"
+    },
+    {
         "name": "Potion of Animal Friendship",
         "amount": "1"
     },
@@ -68,7 +92,7 @@
     },
     {
         "name": "Ruby" ,
-        "amount":  "4"
+        "amount":  "1"
     },
     {
         "name": "Fork",
@@ -95,11 +119,6 @@
         "description": ""
     },
     {
-        "name": "Bag of Beans",
-        "amount": 1,
-        "description": "wonder what these actually do?"
-    },
-    {
         "name": "Small Alchemy Jug",
         "amount": 1,
         "description": "A random liquid comes out every dawn."
@@ -108,16 +127,6 @@
         "name": "Cube of Force",
         "amount": 1,
         "description": ""
-    },
-    {
-        "name": "Rustic Ring",
-        "amount": 4,
-        "description": ""
-    },
-    {
-        "name": "Rope of Climbing",
-        "amount": 1,
-        "description": "its actually just a rope."
     },
     {
         "name": "Oil of Slipperiness",
@@ -131,11 +140,6 @@
     },
     {
         "name": "Dust of Sneezing and Choking",
-        "amount": 1,
-        "description": ""
-    },
-    {
-        "name": "Maracas",
         "amount": 1,
         "description": ""
     }
