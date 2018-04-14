@@ -1,5 +1,15 @@
 [
     {
+       "name":  "Roc Feathers",
+       "amount": 5,
+       "description": "6 ft long feathers"
+    },
+    {
+        "name": "Roc Tallon",
+        "amount": 1,
+        "description": "2 ft long tallon"
+    },
+    {
         "name": "The Craft Of War",
         "description": "moon zoo"
     },

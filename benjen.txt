@@ -1,6 +1,6 @@
 |----- Bard (3) -----|
 
-Inspiration Dice: -2 (max 4)
+Inspiration Dice: -0 (max 4)
 
 SKILLS
 -> Bardic Inspiration :
@@ -49,7 +49,7 @@ CANTRIPS
 
 Spell Slots:
 lvl 2: -0 (2 max)
-lvl 1: -2 (4 max)
+lvl 1: -0 (4 max)
 
 |----- Rogue (1) -----|
 SKILLS
@@ -60,7 +60,7 @@ SKILLS
 SPELLS
 -> Guiding Bolt (1):
     120ft range spell attack, on hit 4d6 radient damage. Next attack on
-    the creature has advantage.
+    the creature durning the turn has advantage.
 -> Magic Missle (1):
     120ft range spell attach, 3 bolts hit target, 1d4 + 1 damage each.
 -> Levitate (2):
@@ -75,6 +75,7 @@ SPELLS
     dex save, 3d12 or half damage on failure. Cube is rough terrain until cleared.
 -> Fireball (3):
 	150 ft range. Each creature in 20ft radius makes dex throw. 8d6 or half damage if succeeds.
+
 CANTRIPS
 -> Poison Spray :
 	con save, if fails, 1d12 of damage to creature within 10 ft.
@@ -91,20 +92,20 @@ CANTRIPS
 
 Spell Slots:
 lvl 3: -1 (2 max)
-lvl 2: -1 (3 max)
-lvl 1: -0 (4 max)
+lvl 2: -0 (3 max)
+lvl 1: -2 (4 max)
 
 | Origin: Wild Magic |
 
-Sourcery Points: -4 (7 max)
+Sourcery Points: -2 (7 max)
 
 FEATURES:
 -> Wild Magic Surge:
     on lvl 1 spell or higher, if you roll a 1 on a d20, roll on Wild Magic Surge Tables.
--> Tides Of Chaos:
+-> Tides Of Chaos (USED):
     Can gain advantage on attack roll, ability check, or saving throw.
     Can't use again until long rest.  While down, dm can trigger Wild Magic
-    Surge on lvl 1 spell.
+    Surge on lvl 1 spell this resets it.
 -> Bend Luck:
     When another creature you can see makes an attack roll, an ability check, or a saving
     throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply
@@ -112,6 +113,18 @@ FEATURES:
     can do so after the creature rolls but before any effects of the roll occur.
 
 Attacking Flying Sword Compainion
+
+HP: 70
+CURR: 53
+
+Prof bonus: 4
+
+Damage Mod: cha mod
+Spell Attack Mod: cha mod + prof bonus (9)
+Spell Attack Mod: 8 + cha mod + prof bonus (17)
+
+AC: 10 + dex mod (14)
+MOVE: 30ft (6 squares)
 
 |******************** Skills ********************|
 Acrobaics        DEX : 7
@@ -131,7 +144,7 @@ Persuasion       CHA : 9
 Religion         INT : 2
 Sleight of Hand  DEX : 9
 Stealth          DEX : 13
-Survival             : 2
+Survival         WIS : 2
 |********** MODS ************|
 str    : -1
 dex    : 5
@@ -139,19 +152,6 @@ con    : 2
 int    : 0
 wis    : 0
 cha    : 5
-
-HP: 70
-CURR: 70
-
-Prof bonus: 4
-
-Damage Mod: cha mod
-Spell Attack Mod: cha mod + prof bonus (9)
-Spell Attack Mod: 8 + cha mod + prof bonus (17)
-
-AC: 10 + dex mod (14)
-MOVE: 30ft (6 squares)
-
 
 Plot Notes:
     -
