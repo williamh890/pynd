@@ -54,7 +54,7 @@ class WildMagicSurgeTable:
             "You cast fly on a random on a random creature within 60 feet of you.",
             "You become invisible for the next minute. During that time, other creatures can't hear you. The invisibility ends if you attach or cast a spell.",
             "If you die within the next minute, you immediately come back to life as if  by the reincarnate spell.",
-            "Your size increases by on size category for the next minute.",
+            "Your size increases by one size category for the next minute.",
             "You and all creatures within 30 feet of you gain vulnerability to piecing damage for the next minute.",
             "You are surrounded by faint, ethereal music for the next minute.",
             "You regain all expended sorcery points."
